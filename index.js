@@ -52,7 +52,7 @@ console.clear()
     const result = await GoStumble(auth);
     if (!result) {
 
-      console.log(chalk.red(`\r[ ${moment().format('HH:mm:ss')} ] Maybe Auth Token Expired ?`));
+      console.log(chalk.white(`\r[ ${moment().format('HH:mm:ss')} ] Maybe Auth Token Expired ?`));
 
     } else if (result.includes('User')) {
 
