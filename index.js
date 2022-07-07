@@ -62,7 +62,7 @@ console.clear()
       const trophy = data.User.SkillRating;
       const crown = data.User.Crowns;
 
-console.log(chalk.red(`\rTime : [ ${moment().format('HH:mm:ss')} ] ${chalk.white(`!`)}${chalk.green(`User : ${username}`)} | ${chalk.blue(`!`)}${chalk.cyan(`Trophy : ${trophy}`)} | ${chalk.purple(`!`)}${chalk.green(`Crown : ${crown}`)}
+console.log(chalk.red(`\rTime : [ ${moment().format('HH:mm:ss')} ] ${chalk.white(`!`)}${chalk.green(`User : ${username}`)} | ${chalk.blue(`!`)}${chalk.cyan(`Trophy : ${trophy}`)} | ${chalk.white(`!`)}${chalk.green(`Crown : ${crown}`)}
 ${chalk.red(` Status : Succes✓`)}\n`));
 await sleep(1500);
 
