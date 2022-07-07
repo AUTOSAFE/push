@@ -10,7 +10,7 @@ function sleep(ms) {
 
 (async () => {
 	console.clear()
- CFonts.say(`Zexxy`, {
+ CFonts.say(`Lana`, {
             font: '3D',
             align: 'left',
             gradient: ['red', 'magenta']
@@ -18,7 +18,7 @@ function sleep(ms) {
         await sleep(1500);
         console.clear()
         console.log(`${chalk.yellow(`Since Script 2022 - 5 - 21`)}`)
-console.log(`${chalk.white(`
+console.log(`${chalk.blue(`
 1 Push Trophy
 3 Push Crown
 Choose to use the available number`)} 
@@ -62,7 +62,7 @@ console.clear()
       const trophy = data.User.SkillRating;
       const crown = data.User.Crowns;
 
-console.log(chalk.green(`\rTime : [ ${moment().format('HH:mm:ss')} ] ${chalk.red(`!`)}${chalk.green(`User : ${username}`)} | ${chalk.red(`!`)}${chalk.cyan(`Trophy : ${trophy}`)} | ${chalk.red(`!`)}${chalk.green(`Crown : ${crown}`)}
+console.log(chalk.red(`\rTime : [ ${moment().format('HH:mm:ss')} ] ${chalk.white(`!`)}${chalk.rainbow(`User : ${username}`)} | ${chalk.blue(`!`)}${chalk.cyan(`Trophy : ${trophy}`)} | ${chalk.purple(`!`)}${chalk.green(`Crown : ${crown}`)}
 ${chalk.red(` Status : Succes✓`)}\n`));
 await sleep(1500);
 
