@@ -62,12 +62,12 @@ console.clear()
       const trophy = data.User.SkillRating;
       const crown = data.User.Crowns;
 
-console.log(chalk.red(`\rTime : [ ${moment().format('HH:mm:ss')} ] ${chalk.white(`!`)}${chalk.rainbow(`User : ${username}`)} | ${chalk.blue(`!`)}${chalk.cyan(`Trophy : ${trophy}`)} | ${chalk.purple(`!`)}${chalk.green(`Crown : ${crown}`)}
+console.log(chalk.red(`\rTime : [ ${moment().format('HH:mm:ss')} ] ${chalk.white(`!`)}${chalk.green(`User : ${username}`)} | ${chalk.blue(`!`)}${chalk.cyan(`Trophy : ${trophy}`)} | ${chalk.purple(`!`)}${chalk.green(`Crown : ${crown}`)}
 ${chalk.red(` Status : Succes✓`)}\n`));
 await sleep(1500);
 
     } else if (result == 'BANNED') {
-      console.log(chalk.bgRed(`Akun lu di banned kontol?`));
+      console.log(chalk.bgRed(`Akun lu di banned?`));
      break;
     }
   }
