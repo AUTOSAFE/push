@@ -17,7 +17,7 @@ function sleep(ms) {
         })
         await sleep(1500);
         console.clear()
-        console.log(`${chalk.yellow(`Since Script 2022 - 5 - 21`)}`)
+        console.log(`${chalk.yellow(`Since Script 2022 - 7 - 7`)}`)
 console.log(`${chalk.blue(`
 1 Push Trophy
 3 Push Crown
