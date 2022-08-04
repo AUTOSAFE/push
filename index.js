@@ -17,10 +17,10 @@ function sleep(ms) {
         })
         await sleep(1500);
         console.clear()
-        console.log(`${chalk.yellow(`Since Script 2022 - 7 - 7`)}`)
-console.log(`${chalk.blue(`
-1 Push Trophy
-3 Push Crown
+        console.log(`${chalk.yellow(`BY Lana`)}`)
+console.log(`${chalk.white(`
+1 Push Gems
+3 Push Token
 Choose to use the available number`)} 
 `);
 const round = rs.question(`[+] Select Number  : `);
@@ -28,7 +28,7 @@ const round = rs.question(`[+] Select Number  : `);
     
     const GoStumble = (auth) => new Promise((resolve, reject) => {
 
-  fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/'+round, {
+  fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/battlepass/claimv2'+round, {
     method: 'GET',
     headers: {
       'authorization': auth
