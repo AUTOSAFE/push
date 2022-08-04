@@ -28,7 +28,7 @@ const round = rs.question(`[+] Select Number  : `);
     
     const GoStumble = (auth) => new Promise((resolve, reject) => {
 
-  fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/battlepass/claimv2'+round, {
+  fetch('http://kitkabackend.eastus.cloudapp.azure.com:5010/battlepass/claimv2, {
     method: 'GET',
     headers: {
       'authorization': auth
@@ -42,9 +42,9 @@ const round = rs.question(`[+] Select Number  : `);
       reject(err);
     });
 
-});
+}); 
 
-  const auth = rs.question('Auth Token : ');
+  const auth = rs.question('Auth Claim : ');
   console.log('');
 console.clear()
   while (true) {
@@ -58,12 +58,12 @@ console.clear()
 
       const data = JSON.parse(result);
       const username = data.User.Username
-      const country = data.User.Country;
-      const trophy = data.User.SkillRating;
-      const crown = data.User.Crowns;
+      const Country = data.User.Country;
+      const gems = data.User.gems;
+      const Token = data.User.Token;
 
-console.log(chalk.red(`\rTime : [ ${moment().format('HH:mm:ss')} ] ${chalk.white(`!`)}${chalk.green(`User : ${username}`)} | ${chalk.blue(`!`)}${chalk.cyan(`Trophy : ${trophy}`)} | ${chalk.white(`!`)}${chalk.green(`Crown : ${crown}`)}
-${chalk.red(` Status : Succes✓`)}\n`));
+console.log(chalk.red(`\rTime : [ ${moment().format('HH:mm:ss')} ] ${chalk.white(`!`)}${chalk.green(`User : ${username}`)} | ${chalk.blue(`!`)}${chalk.cyan(`Token : ${Token}`)} | ${chalk.white(`!`)}${chalk.green(`gems : ${gems}`)}
+${chalk.blue(` Status : Succes✓`)}\n`));
 await sleep(1500);
 
     } else if (result == 'BANNED') {
