@@ -52,12 +52,12 @@ console.clear()
     const result = await GoStumble(auth);
     if (!result) {
 
-      console.log(chalk.white(`\r[ ${moment().format('HH:mm:ss')} ] Maybe Auth Token Expired ?`));
+      console.log(chalk.white(`\r[ ${moment().format('HH:mm:ss')} ] GEMS or Token Masuk ke akun kamu`));
 
     } else if (result.includes('User')) {
 
       const data = JSON.parse(result);
-      const username = data.User.Username;
+      const username = data.User.Username
       const country = data.User.Country;
       const trophy = data.User.SkillRating;
       const crown = data.User.Crowns;
